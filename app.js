@@ -6,7 +6,12 @@ const app = express();
 const server = require('http').createServer(app);
 app.use(bodyParser.json());
 app.use(express.json());
-exports.io = require('socket.io')(server);
+exports.io = require("socket.io")(server, {
+  cors: {
+    origin: "*",
+    credentials: true
+  }
+});
 this.io.on('connection', socket => {
     console.log('A client connected.');
     socket.on('disconnect', () => {

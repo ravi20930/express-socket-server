@@ -1,0 +1,22 @@
+{
+  "name": "express-socket-server",
+  "version": "1.0.0",
+  "description": "boiler plate to setup socket server with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/ravi20930/express-socket-server.git"
+  },
+  "author": "ravi shankar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
